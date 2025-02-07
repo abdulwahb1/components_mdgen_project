@@ -1,9 +1,9 @@
 import card from "/card.svg";
-import hero from "/heroIconPage.svg";
+import hero from "/heroPagePng.png";
 
 export default function HeroSection() {
   return (
-    <div className="relative min-h-[800px] w-full  bg-[#1a1a1a]">
+    <div className="relative min-h-[850px] w-full ">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -13,7 +13,7 @@ export default function HeroSection() {
       />
 
       {/* Floating Card */}
-      <div className="absolute right-[35%] -bottom-[10%] w-40 h-40">
+      <div className="absolute right-[34%] -bottom-[11%] w-48 h-48">
         <img
           src={card}
           alt="Playing card"
@@ -38,12 +38,12 @@ export default function HeroSection() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <button
-            className="px-8 py-3 bg-white text-black rounded-lg hover:bg-gray-100 transition-colors duration-300 "
+            className="px-8 py-3 bg-white text-black rounded-xl hover:bg-gray-100 transition-colors duration-300 "
             style={{ boxShadow: "inset 0 -4px 6px rgba(0, 0, 0, 0.2)" }}
           >
             Register For Free
           </button>
-          <button className="px-8 py-3 bg-black text-white shadow-md rounded-lg hover:bg-white/10 transition-colors duration-300 font-semibold">
+          <button className="px-8 py-3 bg-black text-white shadow-md rounded-xl hover:bg-white/10 transition-colors duration-300 font-semibold">
             Login
           </button>
         </div>

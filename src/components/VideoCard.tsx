@@ -18,8 +18,11 @@ export default function VideoCard({
   return (
     <div
       className={`relative overflow-hidden rounded-[28px] ${className} w-1/2`}
+      style={{
+        background: "linear-gradient(to top left, #151B36 0%, #060B21 30%)",
+      }}
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-[#060B21] to-[#151B36]">
+      <div className="absolute inset-0 rounded-[28px]">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#1E1B3D]/50 to-transparent blur-xl" />
       </div>
 

@@ -3,7 +3,7 @@ import bg from "/aboutbg.svg";
 
 export default function LeaderboardSection() {
   return (
-    <div className="relative min-h-[750px] w-full rounded-3xl bg-[#0a0a1f] max-w-3xl my-20">
+    <div className="relative min-h-[750px] w-full rounded-3xl max-w-3xl my-20">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat "
@@ -14,7 +14,7 @@ export default function LeaderboardSection() {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-start justify-center h-full p-20 max-w-xl mt-10">
-        <h1 className="text-5xl font-bold text-white mb-6 leading-tight">
+        <h1 className="text-6xl font-medium text-white mb-6 leading-tight font-saira">
           Be On Our
           <br />
           Leaderboard
@@ -37,9 +37,9 @@ export default function LeaderboardSection() {
         </p>
 
         <button
-          className="px-8 py-3 rounded-lg bg-white text-black  transition-all transform hover:scale-105"
+          className="px-8 py-3 rounded-xl bg-white text-black  transition-all transform hover:scale-105 font-medium text-md"
           style={{
-            boxShadow: "inset 0 -4px 6px #E1BBFB",
+            boxShadow: "inset 0 -10px 6px #E1BBFB",
           }}
         >
           Register Now
