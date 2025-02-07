@@ -1,12 +1,14 @@
+import HeroSection from "./components/HeroSection";
 import MainLogo from "./components/MainLogo";
 import PrizeCard from "./components/PrizeCard";
+import Section from "./components/LeaderboardSection";
 import ShuffleButton from "./components/ShuffleButton";
 import VideoCard from "./components/VideoCard";
 import XPProfile from "./components/XpProfile";
 
 function App() {
   return (
-    <section className="w-full min-h-dvh flex flex-col gap-y-10 justify-center items-center bg-[#141022]">
+    <section className="w-full min-h-dvh flex flex-col gap-y-10 justify-center items-center bg-[#141022] py-10">
       <ShuffleButton />
       <XPProfile
         name="Jan Ortego"
@@ -64,6 +66,8 @@ function App() {
           videoUrl="#"
         />
       </div>
+      <HeroSection />
+      <Section />
     </section>
   );
 }
