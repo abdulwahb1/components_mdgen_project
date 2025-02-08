@@ -2,7 +2,7 @@ interface PrizeCardProps {
   prizeAmount: number;
   username: string;
   balance: number;
-  trophyVariant: "gold" | "silver" | "bronze";
+  trophyImage: string;
   isTopPrize?: boolean;
   className?: string;
 }
@@ -11,27 +11,21 @@ export default function PrizeCard({
   prizeAmount,
   username,
   balance,
-  trophyVariant,
+  trophyImage,
   className = "",
 }: PrizeCardProps) {
-  const trophyImage = {
-    gold: "/gold.png",
-    silver: "/silver.png",
-    bronze: "/bronze.png",
-  };
-
   return (
-    <div className={`relative w-2/6 ${className}`}>
+    <div className={`relative min-w-[32rem] max-w-lg ${className}`}>
       <div
         className="relative flex items-center gap-6 rounded-2xl p-6 
       shadow-inner hover:shadow-[inset_0_0_0_4px_rgba(6,11,33,0.6)] bg-gradient-to-br from-[#060b21] hover:to-[#0e142F] hover:transition-all hover:duration-300 border border-[#E1BBFB] border-opacity-0 hover:border-opacity-100"
       >
-        <div className="relative h-20 w-20">
+        <div className="relative min-h-24 max-h-24 min-w-24 max-w-24 flex items-center">
           <img
-            src={trophyImage[trophyVariant] || "/placeholder.svg"}
+            src={trophyImage || "/placeholder.svg"}
             alt="Trophy"
             width={80}
-            height={80}
+            height={90}
             className="image-class"
           />
         </div>

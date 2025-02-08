@@ -1,22 +1,25 @@
+// import Logo from "/logo.svg";
 const MainLogo = () => {
   return (
     <div className="flex items-center gap-3 relative">
       <div className="relative">
+        {/* <img src={Logo} alt="" /> */}
         <svg
-          width="354"
-          height="233"
-          viewBox="0 0 354 233"
+          width="150"
+          height="80"
+          viewBox="0 0 200 80"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          className="w-40 h-auto transform -translate-x-20"
         >
           <g filter="url(#filter0_dddddd_110_200)">
             <path
               d="M184.5 54.634C185.167 55.0189 185.167 55.9811 184.5 56.366L170.25 64.5933C169.583 64.9782 168.75 64.497 168.75 63.7272L168.75 47.2728C168.75 46.503 169.583 46.0218 170.25 46.4067L184.5 54.634Z"
               fill="#5DCD65"
-              fillOpacity="0.79"
+              fill-opacity="0.79"
             />
           </g>
-          <g clipPath="url(#clip0_110_200)">
+          <g clip-path="url(#clip0_110_200)">
             <path
               d="M133 47H138.818V51.1538H141V49.0769H143.182V47H149V53.2308H146.818V54.6154H145.364V56.6923H146.818V58.7692H149V65H143.182V62.9231H141V60.8462H138.818V65H133V47Z"
               fill="white"
@@ -31,9 +34,9 @@ const MainLogo = () => {
               width="352.332"
               height="354.539"
               filterUnits="userSpaceOnUse"
-              colorInterpolationFilters="sRGB"
+              color-interpolation-filters="sRGB"
             >
-              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
               <feColorMatrix
                 in="SourceAlpha"
                 type="matrix"
@@ -154,7 +157,7 @@ const MainLogo = () => {
           </defs>
         </svg>
 
-        <span className="absolute top-14 right-12 transform -translate-x-1/2 -translate-y-1/2 font-saira text-xl font-bold text-white">
+        <span className="absolute top-14 -right-8 transform -translate-x-1/2 -translate-y-1/2 font-saira text-xl font-bold text-white">
           On-line
         </span>
       </div>

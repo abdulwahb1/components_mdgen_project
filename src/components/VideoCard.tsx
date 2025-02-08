@@ -52,7 +52,7 @@ export default function VideoCard({
           <h2 className="text-lg text-white">{title}</h2>
           <a
             href={videoUrl}
-            className="flex items-center gap-2 text-[#DFB9F8] hover:text-purple-300 transition-colors text-base mt-9 mr-3 underline whitespace-nowrap font-segoe-ui"
+            className="flex items-center gap-2 text-[#DFB9F8] hover:text-purple-300 transition-colors text-base  mr-3 underline whitespace-nowrap font-segoe-ui pb-5"
           >
             <span>Play video</span>
           </a>
