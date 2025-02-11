@@ -3,10 +3,10 @@ import bg from "/aboutbg.svg";
 
 export default function LeaderboardSection() {
   return (
-    <div className="relative min-h-[750px] w-full rounded-3xl max-w-3xl my-20">
+    <div className="relative min-h-[750px] w-full rounded-2xl max-w-3xl my-20">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat "
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat rounded-2xl"
         style={{
           backgroundImage: `url(${bg})`,
         }}

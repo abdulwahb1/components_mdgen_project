@@ -25,7 +25,7 @@ function App() {
         <MainLogo />
       </div>
 
-      <div className="w-full py-10 flex flex-col justify-center items-center bg-black">
+      <div className="w-full py-10 flex flex-col justify-center items-center bg-black gap-2">
         <PrizeCard
           prizeAmount={50000}
           username="Testusername"

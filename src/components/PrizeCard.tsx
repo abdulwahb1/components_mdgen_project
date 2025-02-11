@@ -15,10 +15,12 @@ export default function PrizeCard({
   className = "",
 }: PrizeCardProps) {
   return (
-    <div className={`relative min-w-[32rem] max-w-lg ${className}`}>
+    <div
+      className={`relative min-w-[32rem] max-w-lg ${className}border border-transparent hover:border-[#E1BBFB] rounded-3xl `}
+    >
       <div
-        className="relative flex items-center gap-6 rounded-2xl p-6 
-      shadow-inner hover:shadow-[inset_0_0_0_4px_rgba(6,11,33,0.6)] bg-gradient-to-br from-[#060b21] hover:to-[#0e142F] hover:transition-all hover:duration-300 border border-[#E1BBFB] border-opacity-0 hover:border-opacity-100"
+        className="relative flex items-center gap-6 rounded-3xl p-6 
+      shadow-inner hover:shadow-[inset_0_0_0_4px_rgba(6,11,33,0.6)] bg-gradient-to-br from-[#060b21] hover:to-[#0e142F] hover:transition-all hover:duration-300  hover:border-opacity-100"
       >
         <div className="relative min-h-24 max-h-24 min-w-24 max-w-24 flex items-center">
           <img
